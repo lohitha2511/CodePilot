@@ -25,65 +25,28 @@ Follow these steps to set up and run CodePilot locally.
 
 1. *Clone the Repository*  
    Open a terminal and run:
-   `git clone https://github.com/lohitha2511/CodePilot.git`
-   `cd CodePilotTest`
+   - `git clone https://github.com/lohitha2511/CodePilot.git`
+   - `cd CodePilot`
    
 
 2. *Install Dependencies*  
    Install the required packages:
 
-   npm install
-   
-   Or, if you prefer yarn:
-   bash
-   yarn install
-   
+  - `npm install`
 
-3. *Configure Environment Variables (If Required)*  
-   If the application requires API keys, create a .env file in the root directory:
-   env
-   REACT_APP_GEMINI_API_KEY=your_api_key_here
+3. *Configure Environment Variables*  
+   Create a .env file in the **client** folder and add the following line to it. You can get this API key by visiting the following website and following the on-screen instructions:
+
+   [API Key from Google](https://aistudio.google.com/app/apikey)
    
+  - `VITE_GEMINI_API_KEY = your_api_key_here`
 
 4. *Run the Development Server*  
    Start the application in development mode:
-   bash
-   npm run dev
    
-   Open the provided URL (e.g., http://localhost:3000) in your browser to use CodePilot.
-
-### Build for Production
-
-To generate an optimized production build, run:
-bash
-npm run build
-
-The production-ready files will be available in the dist directory. You can preview the production build locally using:
-bash
-npm run preview
-
-
----
-
-## 📁 Project Structure
-
-
-CodePilotTest/
-├── public/
-│   └── index.html          # Main HTML file
-├── src/
-│   ├── components/         # React components for each feature
-│   │   ├── CodeGeneration.jsx
-│   │   ├── ErrorAnalysis.jsx
-│   │   ├── TestCaseGeneration.jsx
-│   │   └── Debugging.jsx
-│   ├── App.jsx             # Main application component
-│   ├── main.jsx            # Entry point
-│   └── styles.css          # Global styles
-├── .env (optional)         # Environment variables
-├── package.json            # Project dependencies and scripts
-└── README.md               # Documentation
-
+   - `npm run dev`
+   
+   Open the provided URL (e.g., http://localhost:5173) in your browser to use CodePilot.
 
 ---
 
@@ -102,8 +65,6 @@ CodePilotTest/
 - *No Backend Required* – Runs entirely in the browser for an easy setup.
 - *Hot Module Reloading* – Instant feedback during development with *Vite*.
 - *Optimized for Performance* – Lightweight and fast execution.
-
----
 
 ---
 
